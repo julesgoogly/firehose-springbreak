@@ -1,15 +1,18 @@
  
-<div class="steamy-hottub">
+<div class="span6 offset3 text-center steamy-hottub">
 
-	<h2>
+	<h2 class="custom-font">
 		 money money money
+		 </h2>
+
+	
 
 		 <%= simple_form_for @pic do |f| %>
-		 	<%= f.input :hour %>
-		 	<%= f.input :emotion %>
-		 	<%= f.input :learned %>
-
-		 	<%= f.submit 'Save' %>
+		 	<%= f.input :hour, label: 'Which Hour was this?', placeholder: '1,2,3' %>
+		 	<%= f.input :emotion, label: 'How you feelin?', placeholder:'Swagged, Poppin, Swervin' %>
+		 	<%= f.input :learned, label: 'Watcha learn??', placeholder: 'Thuggin, Winnin, JetLife' %>
+			
+		 	<%= f.submit 'Save', :class => 'btn btn-warning btn-large' %>
 
 		 <% end %>
 
