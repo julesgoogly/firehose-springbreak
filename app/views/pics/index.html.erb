@@ -1,17 +1,18 @@
-<div class="span5 offset4 text-center steamy-hottub">
+	
 
-	<h1>
+<% @pics.each do |pic| %>
+	<div class="span4 text-center steamy-hottub">
 
-	<% @pics.each do |pic| %>
-		Hour: <%= pic.hour %>
+		<h1 class="custom-font">
+			Hour: <%= pic.hour %>
+		</h1>
+		<h2>
 		<br />
 		Emotion: <%= pic.emotion %>
 		<br />
 		Learned: <%= pic.learned %>
-		<br />
-	<% end %>
+		</h2>
+	</div>
 
-	 </h1>
-
-</div>
+<% end %>
 
